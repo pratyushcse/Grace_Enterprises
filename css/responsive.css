@@ -1,0 +1,430 @@
+/* =========================================
+   LARGE LAPTOPS
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .container {
+        width: min(92%, 1120px);
+    }
+
+    .hero-content h1 {
+        font-size: 54px;
+    }
+
+    .section-title {
+        font-size: 44px;
+    }
+
+    .nav-links {
+        gap: 24px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .trust-grid,
+    .stats-wrapper,
+    .process-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .footer-col:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 992px) {
+
+    section {
+        padding: 90px 0;
+    }
+
+    .header {
+        background: rgba(255, 255, 255, 0.94);
+        backdrop-filter: blur(18px);
+        box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+    }
+
+    .navbar {
+        height: 78px;
+    }
+
+    .logo img {
+        height: 52px;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 78px;
+        right: -100%;
+        width: min(82%, 360px);
+        height: calc(100vh - 78px);
+        padding: 40px 28px;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        box-shadow: -20px 30px 50px rgba(15, 23, 42, 0.12);
+        transition: right 0.35s ease;
+        overflow-y: auto;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li,
+    .nav-links a {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 8px 0;
+        font-size: 18px;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .nav-right .btn {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 135px;
+    }
+
+    .hero-container,
+    .about-wrapper,
+    .why-wrapper,
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .hero-content p,
+    .section-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons,
+    .hero-features {
+        justify-content: center;
+    }
+
+    .hero-image {
+        max-width: 720px;
+        margin: auto;
+    }
+
+    .card-one {
+        left: 20px;
+    }
+
+    .card-two {
+        right: 20px;
+    }
+
+    .experience-box {
+        right: 20px;
+    }
+
+    .services-grid,
+    .gallery-grid,
+    .pricing-grid,
+    .testimonial-grid,
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured,
+    .featured-review,
+    .featured-team {
+        transform: none;
+    }
+
+    .featured:hover,
+    .featured-review:hover,
+    .featured-team:hover {
+        transform: translateY(-10px);
+    }
+
+    .pricing-card:last-child,
+    .team-card:last-child,
+    .testimonial-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 620px;
+        width: 100%;
+        justify-self: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-col:last-child {
+        grid-column: auto;
+    }
+}
+
+
+/* =========================================
+   MOBILE LANDSCAPE / SMALL TABLETS
+========================================= */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 75px 0;
+    }
+
+    .section-header {
+        margin-bottom: 48px;
+    }
+
+    .section-title {
+        font-size: 38px;
+    }
+
+    .section-description {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding-top: 120px;
+        padding-bottom: 75px;
+    }
+
+    .hero-container {
+        gap: 45px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .floating-card {
+        padding: 14px 18px;
+    }
+
+    .floating-card h3 {
+        font-size: 22px;
+    }
+
+    .trust-grid,
+    .stats-wrapper,
+    .process-wrapper,
+    .services-grid,
+    .gallery-grid,
+    .pricing-grid,
+    .testimonial-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card:last-child,
+    .team-card:last-child,
+    .testimonial-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .about-features,
+    .why-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-box {
+        position: static;
+        width: fit-content;
+        margin: -35px auto 0;
+    }
+
+    .service-card img {
+        height: 250px;
+    }
+
+    .gallery-card img {
+        height: 320px;
+    }
+
+    .faq-contact {
+        padding: 42px 24px;
+    }
+
+    .faq-contact h3 {
+        font-size: 30px;
+    }
+
+    .contact-form {
+        padding: 30px 22px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 38px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .container {
+        width: min(92%, 540px);
+    }
+
+    .navbar {
+        height: 72px;
+    }
+
+    .nav-links {
+        top: 72px;
+        height: calc(100vh - 72px);
+    }
+
+    .logo img {
+        height: 46px;
+    }
+
+    .hero {
+        padding-top: 105px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-tag {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .btn {
+        padding: 14px 24px;
+    }
+
+    .hero-image img,
+    .about-image img,
+    .why-image img {
+        border-radius: 22px;
+    }
+
+    .floating-card {
+        position: static;
+        display: inline-block;
+        width: calc(33.33% - 8px);
+        margin-top: 14px;
+        margin-right: 6px;
+        padding: 12px 6px;
+        vertical-align: top;
+    }
+
+    .floating-card h3 {
+        font-size: 19px;
+    }
+
+    .floating-card p {
+        font-size: 11px;
+    }
+
+    .trust-card,
+    .process-card,
+    .pricing-card,
+    .testimonial-card,
+    .team-card {
+        padding: 30px 22px;
+    }
+
+    .service-card img {
+        height: 220px;
+    }
+
+    .gallery-card img {
+        height: 270px;
+    }
+
+    .stat-card h2 {
+        font-size: 44px;
+    }
+
+    .price {
+        font-size: 40px;
+    }
+
+    .faq-question {
+        padding: 22px 18px;
+        gap: 15px;
+    }
+
+    .faq-question h3 {
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        padding: 0 18px;
+    }
+
+    .map {
+        height: 260px;
+    }
+
+    #backToTop {
+        width: 48px;
+        height: 48px;
+        right: 18px;
+        bottom: 18px;
+    }
+}
